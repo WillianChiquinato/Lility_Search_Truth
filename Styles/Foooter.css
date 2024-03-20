@@ -1,0 +1,67 @@
+:root {
+    --cor-branco: #fff;
+    --cor-do-preto: #000;
+
+    --fonte-primaria: "Itim", cursive;
+}
+
+.Footer_Main {
+    background-color: var(--cor-do-preto);
+    font-family: var(--fonte-primaria);
+    padding-top: 20px;
+    border-top: solid 3px #424242;
+}
+
+.Footer_Cima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.Titulo_Footer {
+    color: #fff;
+    font-size: 31px;
+}
+
+.Copyright {
+    color: #977979;
+    font-size: 16px;
+}
+
+.Footer_Conteudo {
+    display: flex;
+    justify-content: space-between;
+    color: var(--cor-branco);
+    gap: 30px;
+    margin: 0 200px;
+    padding-bottom: 30px;
+}
+
+.Lista_e_Titulos {
+    font-size: 23px;
+}
+
+.Lista_e_Titulos li {
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1490px) 
+{
+    /* parte do footer */
+    .Titulo_Footer {
+        font-size: 29px;
+    }
+
+    .Footer_Conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 34px;
+        margin: 0 70px;
+    }
+
+    .Lista_e_Titulos {
+        font-size: 18px;
+    }
+}
