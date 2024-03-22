@@ -59,8 +59,6 @@
         </div>
     </header>
     
-    <script src="Js.js" defer></script>
-    
     <main id="Inicio" class="Saiba-mais Hidden2">
         <div class="Imagens_Mostrando">
 
@@ -144,7 +142,7 @@
     </main>
 
     <main id="Formulario" class="Formulario-Container">
-        <form method="post" action="https://formsubmit.co/lilitysearchtruth.kigap@gmail.com" class="Forms_ParaInputs">
+        <form method="post" action="Arquivos/Envia_Forms.php" class="Forms_ParaInputs">
             <section class="Forms_Direita">
                 <div class="Formulario-Titulo Hidden">
                     <span class="Forms_Texto"><u> FORMULÁRIO </u></span>
@@ -176,19 +174,18 @@
                             <option value="Jogador"> Jogador </option>
                         </select>
                     </div>
-                        
                 </div>
                     
                 <div class="Input_Mensagem">
                     <label for="Mensagem" class="mensagem"> Mensagem (Opicional) </label>
-                    <input type="tel" name="Mensagem" id="input_04" placeholder="Digite sua mensagem extra">
+                    <input type="text" name="Mensagem" id="input_04" placeholder="Digite sua mensagem extra">
                 </div>
                     
                 <div class="Botao_enviar">
                     <button type="submit" class="Botao_Style" value="Enviar"> ENVIAR </button>
                 </div>
             </section>
-
+            
             <section class="Forms_Texto_Esquerda">
                 <div class="Forms_Esquerda_Principal Hidden">
                     <span> REDES SOCIAIS </span>
@@ -218,10 +215,6 @@
                     </div>
                 </div>
             </section>
-
-            <input type="hidden" name="_subject" value="Formulario Contato">
-            <input type="text" name="_honey" style="display: none;">
-            <input type="hidden" name="_captcha" value="false">
         </form>
     </main>
         
@@ -258,6 +251,7 @@
     </footer>
 </body>
 
+<script src="Js.js" defer></script>
 <script src="Parallax.js"></script>
 
 </html>

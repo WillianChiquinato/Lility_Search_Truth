@@ -37,7 +37,7 @@
     background-color: var(--cor-do-preto);
     color: var(--cor-branco);
     text-align: center;
-    width: 50%;
+    width: 40%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -210,6 +210,9 @@
 
 @media screen and (max-width: 1490px) 
 {
+    .Label_Animacao {
+        width: 300px;
+    }
 
     /* toda a parte do formulario */
     .Forms_ParaInputs {
