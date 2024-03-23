@@ -66,3 +66,15 @@ body {
     color: #472626;
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 1490px) 
+{
+    .Container_Resul {
+        width: 350px;
+        padding: 30px 20px;
+    }
+
+    .Resul_Titulo {
+        font-size: 46px;
+    }
+}
