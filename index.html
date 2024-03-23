@@ -142,7 +142,7 @@
     </main>
 
     <main id="Formulario" class="Formulario-Container">
-        <form method="post" action="Arquivos/Envia_Forms.php" class="Forms_ParaInputs">
+        <form method="post" action="https://api.staticforms.xyz/submit" class="Forms_ParaInputs">
             <section class="Forms_Direita">
                 <div class="Formulario-Titulo Hidden">
                     <span class="Forms_Texto"><u> FORMULÁRIO </u></span>
@@ -151,23 +151,23 @@
                     
                 <div class="Formulario-Inputs">
                     <div class="Input_box">
-                        <input type="text" name="Nome_SobreNome" class="InputUser" required>
+                        <input type="text" name="name" class="InputUser" required autocomplete="off">
                         <label for="Nome" class="Label_Animacao"> Nome e SobreNome* </label>
                     </div>
                         
                     <div class="Input_box">
-                        <input type="email" name="Email" class="InputUser" required>
+                        <input type="email" name="email" class="InputUser" required autocomplete="off">
                         <label for="email" class="Label_Animacao"> Email* </label>
                     </div>
 
                     <div class="Input_box">
-                        <input type="tel" name="Telefones" class="InputUser" required>
+                        <input type="tel" name="phone" class="InputUser" required autocomplete="off">
                         <label for="Numero" class="Label_Animacao"> Numero (Celular ou Telefone)* </label>
                     </div>
 
                     <div class="Input_Pessoa">
                         <label for="Pessoa" class="Pessoa"> Tipo de Pessoa* </label>
-                        <select name="TipoDepessoa" id="Tipo_Pessoa" required>
+                        <select name="$TipoPessoa" id="Tipo_Pessoa" required>
                             <option value="Vazia"> Selecionar </option>
                             <option value="Recrutador"> Recrutador </option>
                             <option value="Professor"> Professor </option>
@@ -178,12 +178,16 @@
                     
                 <div class="Input_Mensagem">
                     <label for="Mensagem" class="mensagem"> Mensagem (Opicional) </label>
-                    <input type="text" name="Mensagem" id="input_04" placeholder="Digite sua mensagem extra">
+                    <input type="text" name="message" id="input_04" placeholder="Digite sua mensagem extra">
                 </div>
                     
                 <div class="Botao_enviar">
-                    <button type="submit" class="Botao_Style" value="Enviar"> ENVIAR </button>
+                    <button type="submit" class="Botao_Style" value="submit"> ENVIAR </button>
                 </div>
+
+                <input type="hidden" name="accessKey" value="8b3267a7-4175-4ee8-84c7-89c39fb562b6">
+                <input type="hidden" name="subject" value="Formulario Contato - LilitySTruth" />
+                <input type="hidden" name="redirectTo" value="https://willianchiquinato.github.io/Lility_Search_Truth/Resultado_Forms.html">
             </section>
             
             <section class="Forms_Texto_Esquerda">
