@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 :root {
     --cor-branco: #fff;
     --cor-do-preto: #000;
@@ -192,11 +194,12 @@
 
 .Botao_Style {
     background-color: #3c8bd6;
+    font-family: var(--fonte-primaria);
     color: var(--cor-branco);
     border: 1px solid var(--cor-do-preto);
     border-radius: 20px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 38px;
     padding: 20px;
     cursor: pointer;
     transition: all 0.4s linear;
@@ -263,7 +266,7 @@
     }
 
     .Botao_Style {
-        font-size: 22px;
+        font-size: 28px;
         padding: 15px;
     }
 
