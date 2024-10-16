@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c47272;
+    width: 100%;
+    font-family: "Itim", cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 3px solid #000;
+}
+
+.Container_Resul {
+    background-color: #3d1f1f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 700px;
+    padding: 30px 100px;
+    border: 1px solid #fff;
+}
+
+.Resul_Titulo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.Resul_Subtitulo {
+    color: #d67b7b;
+    padding-bottom: 40px;
+    font-size: 17px;
+}
+
+.Button_Resul {
+    margin: 50px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.Button_Style {
+    background-color: #3c8bd6;
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.Button_Style:hover {
+    background-color: #fff;
+    color: #472626;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1490px) 
+{
+    .Container_Resul {
+        width: 350px;
+        padding: 30px 20px;
+    }
+
+    .Resul_Titulo {
+        font-size: 46px;
+    }
+}

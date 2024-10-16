@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+:root {
+    --cor-branco: #fff;
+    --cor-do-preto: #000;
+
+    --fonte-primaria: "Itim", cursive;
+}
+
+
+/* Parte do formulário */
+.Formulario-Container {
+    background-color: #353232;
+    font-family: var(--fonte-primaria);
+    width: 100%;
+    padding: 80px 100px;
+    z-index: -1;
+}
+
+.Forms_ParaInputs {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #dda1a1;
+    border-radius: 20px;
+}
+
+.Forms_Direita {
+    background-color: #a04141;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    gap: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.Forms_Texto_Esquerda {
+    background-color: var(--cor-do-preto);
+    color: var(--cor-branco);
+    text-align: center;
+    width: 40%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.Formulario-Titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Forms_Texto, .Forms_Esquerda_Principal {
+    color: var(--cor-branco);
+    font-size: 58px;
+    font-weight: 500;
+    padding-top: 30px;
+}
+
+.Forms_SubTexto {
+    color: var(--cor-do-preto);
+    font-size: 32px;
+}
+
+.Forms_Esquerda {
+    margin-top: 30px;
+    color: var(--cor-branco);
+    font-size: 0;
+}
+
+.Caixas_Container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    padding-bottom: 10px;
+}
+
+.Div_Caixa {
+    background-color: #8d6868;
+    width: 180px;
+    height: 180px;
+    transition: all 0.6s ease;
+}
+
+.Div_Caixa:hover {
+    background-color: #683a3a;
+    transform: scale(1.05);
+    border: 1px solid var(--cor-branco);
+}
+
+.Div_Caixa img {
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+
+/* Parte dos textos */
+.Formulario-Inputs {
+    width: 30%;
+}
+
+.Label_Animacao {
+    position: absolute;
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
+    width: 360px;
+    pointer-events: none;
+    padding-top: 15px;
+    transition: .5s;
+}
+
+.Pessoa {
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+
+.Input_box, .Input_Pessoa {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.Input_Mensagem {
+    text-align: center;
+    font-size: 23px;
+}
+
+.InputUser {
+    position: relative;
+    background: transparent;
+    font-family: var(--fonte-primaria);
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin-top: 13px;
+    text-align: start;
+    font-size: 20px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid var(--cor-branco);
+}
+
+#input_04 {
+    position: relative;
+    background: #eccfcf;
+    font-family: var(--fonte-primaria);
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    text-align: start;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 7px;
+}
+
+.InputUser:focus ~ .Label_Animacao,
+.InputUser:valid ~ .Label_Animacao {
+    top: -20px;
+    font-size: 15px;
+    color: #5f0000;
+}
+
+#Tipo_Pessoa {
+    background-color: #da9898;
+    width: 75%;
+    height: 30px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: var(--fonte-primaria);
+    border: 2px solid var(--cor-do-preto);
+    border-radius: 5px;
+}
+
+/* botao de enviar */
+.Botao_enviar {
+    text-decoration: none;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.Botao_Style {
+    background-color: #3c8bd6;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-branco);
+    border: 1px solid var(--cor-do-preto);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 38px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.Botao_Style:hover {
+    background-color: var(--cor-branco);
+    color: #0c2b3f;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1490px) 
+{
+    .Label_Animacao {
+        width: 280px;
+    }
+
+    /* toda a parte do formulario */
+    .Forms_ParaInputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Formulario-Container {
+        padding: 30px 10px;
+    }
+
+    /* forms Rosa */
+    .Forms_Texto {
+        font-size: 46px;
+        padding-top: 5px;
+    }
+
+    .Forms_Esquerda_Principal {
+        font-size: 46px;
+        padding-top: 22px;
+    }
+
+    .Forms_SubTexto {
+        font-size: 26px;
+    }
+
+    .Forms_Direita {
+        width: 100%;
+        gap: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom: 3px solid #dda1a1;
+    }
+
+    .Formulario-Inputs {
+        width: 70%;
+    }
+
+    .Input_Mensagem {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #input_04 {
+        font-size: 20px;
+    }
+
+    .Botao_Style {
+        font-size: 28px;
+        padding: 15px;
+    }
+
+    /* forms Preto */
+    .Forms_Texto_Esquerda {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .Caixas_Container {
+        grid-template-columns: 170px 170px;
+        grid-template-rows: 170px 170px 170px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+    .Div_Caixa {
+        width: 150px;
+        height: 150px;
+    }
+
+    .Div_Caixa img {
+        height: 100px;
+        width: 100px;
+        margin-top: 26px;
+    }
+}
