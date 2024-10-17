@@ -149,8 +149,11 @@
     /* começo */
     .Background-Video {
         /* para deixar o video no container por inteiro, nao vazando */
-        object-fit: none;
         object-position: center center;
+    }
+
+    .Trailer-main {
+        padding-bottom: 50px;
     }
 
     /* parte do main, da lility history */
@@ -189,7 +192,8 @@
 
     .Video-source {
         border-radius: 4px;
-        width: 350px;
+        width: 370px;
+        height: 208px;
     }
 
     .Adendo-Video {
